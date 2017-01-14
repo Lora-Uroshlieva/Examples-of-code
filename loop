@@ -1,0 +1,11 @@
+new_studs = []
+
+while 1:
+    student = input('Enter name of student: ').strip().capitalize()
+    if not student:
+        continue
+    if student.lower() == 'exit':
+        break
+    new_studs.append(student)
+
+print(new_studs)
