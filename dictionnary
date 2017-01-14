@@ -18,3 +18,33 @@ for person in phones:
     for tel in phones[person]:
         if search_number in tel:
             print(person, tel)
+
+
+
+
+#Task with products
+product_1 = {
+    'title': 'Car',
+    'price': 100,
+    'photo': '1.jpg',
+    'params': {
+        'weight': 500,
+        'color': 'red',
+    },
+}
+
+product_2 = {
+    'title': 'Bike',
+    'price': 50,
+    'photo': '2.jpg',
+    'params': {
+        'weight': 40,
+        'color': 'black',
+    },
+}
+
+products = [product_1, product_2]
+
+for item in products:
+    print('%s \n Price: %s USD \n Color: %s'
+          % (item['title'], item['price'], item['params']['color']))
