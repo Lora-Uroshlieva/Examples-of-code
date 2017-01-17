@@ -26,5 +26,3 @@ def func_1():
     print('between text')
 
 func_1()
-
-print(func_1.__doc__)
